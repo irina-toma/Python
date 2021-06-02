@@ -21,3 +21,9 @@ def test_not_same_users():
 def test_same_age():
     print("\nRunning test_same_age...")
     assert user1.get("age", -1) == user2.get("age", -1)
+
+
+# will fail
+def test_same_age2():
+    print("\nRunning test_same_age...")
+    assert user1.get("age", -1) != user2.get("age", -1)
